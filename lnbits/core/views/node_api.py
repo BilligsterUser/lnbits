@@ -192,7 +192,7 @@ async def api_get_1ml_stats(node: Node = Depends(require_node)) -> Optional[Node
     headers = {"User-Agent": settings.user_agent}
     n ='testnet/' if settings.testnet else ""
     async with httpx.AsyncClient(headers=headers) as client:
-        r = await client.get(url=f"https://1ml.com/${n}node/{node_id}/json", timeout=15)
+        r = await client.get(url=f"https://1ml.com/{n}node/{node_id}/json", timeout=15)
         try:
             r.raise_for_status()
             return r.json()["noderank"]
