@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lnbits"
-version = "0.12.4"
+version = "0.12.5"
 description = "LNbits, free and open-source Lightning wallet and accounts system."
 authors = ["Alan Bits <alan@lnbits.com>"]
 
@@ -73,6 +73,7 @@ openai = "^1.12.0"
 json5 = "^0.9.17"
 asgi-lifespan = "^2.1.0"
 pytest-md = "^0.2.0"
+pytest-httpserver = "^1.0.10"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
